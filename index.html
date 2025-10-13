@@ -16,18 +16,20 @@
             <figcaption>Foto de perfil</figcaption>
         </header>
         
-        <nav>
-            
-            <ul>
-                <li><a href="#resumen">Resumen</a></li>
-                <li><a href="#conocimientos">Experiencia</a></li>
-                <li><a href="#educacion">Educación</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#ubicacion">Ubicación</a></li>
-                <li><a href="#contactar">Contactar</a></li>
-            </ul>
-        </nav>
+        <box>
+            <nav> 
+                <ul>
+                    <li><a href="#resumen">Resumen</a></li>
+                    <li><a href="#conocimientos">Experiencia</a></li>
+                    <li><a href="#educacion">Educación</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                    <li><a href="#contactar">Contactar</a></li>
+                </ul>
+            </nav>
+        </box>
+        
         
         <main>
             <section id="resumen">
@@ -90,13 +92,52 @@
 
             <section id="contactar">
                 <h3 class="subtitle">Contactar</h3>
-                ¿Deseas algún trabajo?
+                
                 <form>
-                    <input type="text" placeholder="Celular" name="celular">
+                    <label>¿Deseas contactarme?</label>
+                    <label for="nombre"> Nombre </label>
                     <input type="text" placeholder="Nombre" name="name">
-                    <input type="text" placeholder="Breve Descripcion" name="descripction">
+                    <label for="contacto">Contacto</label>
+                    <input type="text" placeholder="Celular, Correo, LinkedIn" name="celular">
+
+                    <label> Motivo de Contacto</label>
+                    <label>
+                        <input type="radio" value="consulta">Consulta
+                    </label>
+                    <label>
+                        <input type="radio" value="sugerencia">Sugerencia
+                    </label>
+                    <label>
+                        <input type="radio" value="soporte">Soporte
+                    </label>
+                    <label> Breve Mensaje</label>
+                    <label>
+                        <textarea>...</textarea>
+                    </label>
                     <input type="submit">
                 </form>
+
+            </section>
+
+            <section id="referencias">
+                <h2>Referencias</h2>
+                <article>
+                <h3>María González</h3>
+                <p><em>Desarrolladora Frontend en TechNova</em></p>
+                <p>"Trabajar con Lisbeth fue una experiencia increíble. Su habilidad para resolver problemas técnicos y su enfoque creativo marcaron la diferencia en nuestro proyecto."</p>
+                </article>
+
+                <article>
+                <h3>Carlos Méndez</h3>
+                <p><em>Profesor de Ingeniería en Computación</em></p>
+                <p>"Lisbeth demuestra una curiosidad genuina y una capacidad excepcional para conectar teoría con práctica. Es una estudiante comprometida y con gran potencial."</p>
+                </article>
+
+                <article>
+                <h3>Andrea Ruiz</h3>
+                <p><em>Diseñadora UX en PixelCraft</em></p>
+                <p>"La colaboración con Lisbeth fue fluida y enriquecedora. Su dominio de CSS y diseño visual aportó claridad y estilo al sitio web que desarrollamos juntas."</p>
+                </article>
             </section>
 
         </main>
