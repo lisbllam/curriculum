@@ -11,25 +11,32 @@
     <body>
         <header>
             <h1>Lisbeth Llamuca</h1>
-            <p>Estudiante | lisbllam@espol.edu.ec</p>
-            <img id="photo" src="images/myself.JPG" alt="foto">
-            <figcaption>Foto de perfil</figcaption>
+            <h5>Estudiante | lisbllam@espol.edu.ec</h5>
+            
+            
+            
         </header>
-        
-        <box>
-            <nav> 
-                <ul>
-                    <li><a href="#resumen">Resumen</a></li>
-                    <li><a href="#conocimientos">Experiencia</a></li>
-                    <li><a href="#educacion">Educación</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#ubicacion">Ubicación</a></li>
-                    <li><a href="#contactar">Contactar</a></li>
-                </ul>
-            </nav>
-        </box>
-        
+
+        <div class="contenedor">
+            <figure>
+                <img id="photo" src="images/myself.JPG" alt="foto">
+                <figcaption>Foto de perfil</figcaption>
+            </figure>
+            <box>
+                <nav> 
+                    <ul>
+                        <li><a href="#resumen">Resumen</a></li>
+                        <li><a href="#conocimientos">Conocimientos</a></li>
+                        <li><a href="#educacion">Educación</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#ubicacion">Ubicación</a></li>
+                        <li><a href="#contactar">Contactar</a></li>
+                        <li><a href="#referencias">Referencias</a></li>
+                    </ul>
+                </nav>
+            </box>
+        </div>
         
         <main>
             <section id="resumen">
@@ -112,11 +119,12 @@
                     </label>
                     <label> Breve Mensaje</label>
                     <label>
-                        <textarea>...</textarea>
+                        <textarea></textarea>
                     </label>
-                    <input type="submit">
+                    <button>
+                        Enviar
+                    </button>
                 </form>
-
             </section>
 
             <section id="referencias">
