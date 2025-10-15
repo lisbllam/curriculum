@@ -15,6 +15,10 @@ h1{
 
 }
 
+header{
+  text-align: center;
+}
+
 #photo{
   width: 20vw;
   height: auto;
@@ -34,23 +38,40 @@ footer p {
 nav > ul {
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: left;
   align-items: center;
-  
+}
+
+nav > ul > li{
+  background-color: gainsboro;
+  margin: 3%;
+  padding: 3%;
+  border-radius: 10%;
+}
+
+a{
+  color: black;
+
 }
 
 section {
-  border: 0.2pt solid #cedddd;
-  margin: 4px 2px 8px 2px;
-  padding: 1rem;
-  margin-bottom: 1.2rem;
+  border: 1pt solid gray;
+  margin: 10px;
+  padding: 1px 10px;
+  line-height: 1.2;
+
 }
 
 section > form {
   display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 1rem;
+  grid-template-columns: 2fr;
+  row-gap: 0.4rem;
   column-gap: 1rem;
+}
+
+section > form > input{
+  padding: 1px 4px;
 }
 
 section#referencias{
@@ -67,5 +88,19 @@ section#referencias{
   flex: 1 1 calc(33.333% - 1rem);
 }
 
+.contenedor {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
 
+button{
+  width: 20%;
+  margin-bottom: 7pt;
+}
+
+textarea{
+  width: 80%;
+  height: 6rem;
+}
 
